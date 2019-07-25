@@ -14,8 +14,8 @@ class disable_file_system_redirection:
         if self.success:
             self._revert(self.old_value)
 with disable_file_system_redirection():
-    out=os.popen(cmdSecurityPolicy).read();
-	out+=os.popen(cmdGroupPolicy).read();
-	out+=os.popen(cmdGroupPolicyUsers).read();
-	out+=os.popen(cmdGPupdate).read();
-    print(out);
+    out=os.popen(cmdSecurityPolicy).read()
+    out+=os.popen(cmdGroupPolicy).read()
+    out+=os.popen(cmdGroupPolicyUsers).read()
+    out+=os.popen(cmdGPupdate).read()
+    print(out)
